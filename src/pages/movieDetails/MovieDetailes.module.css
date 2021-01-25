@@ -1,0 +1,22 @@
+.detailedDiv {
+    display: flex;
+    /* width: 300px; */
+    /* outline: 1px solid teal; */
+
+}
+.btn {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.image {
+    display: block;
+}
+.description {
+    width: 500px;
+    margin-left: 50px;
+    /* outline: 1px solid tomato; */
+}
+.title {
+    margin-bottom: 10px;
+    font-weight: bold;
+}
