@@ -10,6 +10,7 @@
 }
 .image {
     display: block;
+    margin-bottom: 25px;
 }
 .description {
     width: 500px;
@@ -18,5 +19,22 @@
 }
 .title {
     margin-bottom: 10px;
+    margin-top: 10px;
     font-weight: bold;
+}
+.imgActor {
+width: 100px;
+/* height: 50px; */
+}
+.wrapActor {
+    display: flex;
+    flex-direction: row;
+}
+.wrapper {
+    display: block;
+    width: 1000px;
+    margin-top: 25px;
+}
+.actorName{
+    display: block
 }

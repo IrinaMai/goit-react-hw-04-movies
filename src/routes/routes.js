@@ -10,7 +10,7 @@ const mainRoutes = [
     {
         path: '/movies',
         name: 'Movies',
-        exact: true,
+        exact: false,
         component: lazy(() => import("../pages/moviesPage/MoviesPage" /* webpackChunkName: "MoviePage"*/)
     )}
 ];
@@ -18,7 +18,7 @@ const mainRoutes = [
 const secondaryRoutes = {
         path: '/movies/:movieId',
         name: '',
-        exact: true,
+        exact: false,
         component: lazy(() => import("../pages/movieDetails/MovieDetailes" /* webpackChunkName: "MovieDetails"*/)
     ),
 }

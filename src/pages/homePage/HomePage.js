@@ -16,7 +16,7 @@ const HomePage = () => {
     return (
         <>
         <h2 className={title}>Tending movies list</h2>
-            {state.length && (
+            {(state.length>0) && (
                 <ol className= {list}>
                 {state.map(({ id, title, poster_path}) =>
                 (<li className={item} key={id}>

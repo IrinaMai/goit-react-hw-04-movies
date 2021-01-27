@@ -8,17 +8,18 @@ const MainContent = () => {
     return (
         <Suspense fallback={<div>Loading...</div>}>
             <Switch>
+                      <Route path={routes.secondaryRoutes.path} 
+                    exact={routes.secondaryRoutes.exact}
+                    key={routes.secondaryRoutes.path}
+                    component = {routes.secondaryRoutes.component}
+                />
                 {routes.mainRoutes.map(({ path, exact, component: MyComponent }) =>
                     <Route path={path}
                         exact={exact}
                         key={path}
                         render={(props) => <MyComponent {...props}/>}
                     />)}
-                <Route path={routes.secondaryRoutes.path} 
-                    exact={routes.secondaryRoutes.exact}
-                    key={routes.secondaryRoutes.path}
-                    component = {routes.secondaryRoutes.component}
-                />
+          
                 <Route component={NotFoundPage}/>
             </Switch>
             </Suspense>
